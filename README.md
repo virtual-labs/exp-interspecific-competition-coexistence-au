@@ -1,24 +1,20 @@
+
 ## Introduction
 
 
-<b>Discipline | <b>Fill your discipline name here
+<b>Discipline | <b>Biotechnology and Biomedical Engineering
 :--|:--|
-<b> Lab | <b> Fill your lab name here
-<b> Experiment|     <b> Fill your experiment name and number here
+<b> Lab | <b>Population ecology Virtual Lab I 
+<b> Experiment|     <b> Interspecific Competition and Coexistence
+
 
 ### About the Experiment 
 
-Fill a brief description of this experiment here
+To understand the ecological principles of interspecific competition and the conditions that enable species coexistence by simulating interactions between two competing species. The experiment aims to demonstrate how resource limitation and competition affect species population dynamics over time and explore the concept of competitive exclusion and niche differentiation.
 
-<b>Name of Developer | <b> Fill the name of experiment owner here 
+<b>Name of Developer | <b> Dr. Shyam Diwakar 
 :--|:--|
-<b> Institute | <b>  
-<b> Email id|     <b>  
-<b> Department |  
+<b> Institute | <b>  Amrita Vishwa Vidyapeetham
+<b> Email id|     <b>  shyam@amrita.edu
+<b> Department |  Amrita Mind Brain Center
 
-### Contributors List
-
-SrNo | Name | Faculty or Student | Department| Institute | Email id
-:--|:--|:--|:--|:--|:--|
-1 | . | . | . | . | .
-2 | . | . | . | . | .
