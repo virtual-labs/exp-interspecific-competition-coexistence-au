@@ -2,12 +2,12 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "1. ",
+      "question": "1. For two competing species (denoted 1 and 2), the population growth rate of species 1 in the presence of species 2 is.",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Lower at all population sizes of species 1 than in the absence of species 2.",
+        "b": "Zero when the population reaches K.",
+        "c": "Dependent on the carrying capacity of species 2.",
+        "d": "The same as in the absence of species 2."
       },
  
       "correctAnswer": "a",
@@ -16,26 +16,26 @@
 
 
     {
-      "question": "2. ",
+      "question": "2. What is the equilibrium population size of a species in the absence of competitors or predators?",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "The population at which the per capita growth rate = 0.",
+        "b": "The maximum population size the environment can sustain.",
+        "c": "The population size at which dn/dt=0 (where N refers to the population size).",
+        "d": "All of these"
       },
       
-      "correctAnswer": "b",
+      "correctAnswer": "d",
       "difficulty": "beginner"
     },
 
     
     {
-      "question": "3. ",
+      "question": "3. When is competitive exclusion likely to occur?",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "When interspecific competition is less intense than intraspecific competition.",
+        "b": "When two species exhibit resource partitioning.",
+        "c": "When interspecific competition is more intense than intraspecific competition.",
+        "d": "When the inferior competitor has a refuge in the environment."
       },
      
       "correctAnswer": "a",
