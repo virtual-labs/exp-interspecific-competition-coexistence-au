@@ -14,4 +14,59 @@ The other ant species D. pyramicus is also the competitor to C. clypeatus but th
 
 Mathematically to model such a process requires classic Lotka-Volterra equations. The negative effect created by one species on another could be shown by adding an extra term in the original equation. The Lotka-Volterra equation takes the form as:
 
+<img src="images/1.png" title="" />
+
+&nbsp;
+
+Mathematically to model such a process requires classic Lotka-Volterra equations. The negative effect created by one species on another could be shown by adding an extra term in the original equation. The Lotka-Volterra equation takes the form as:
+
+<img src="images/2.png" title="" />
+
+&nbsp;
+Where, rm(1) is the maximum rate of growth per individual for species 1,
+
+N1 is the number of individuals of species 1,
+
+K1 is the carrying capacity of the species 1,
+
+N2 is the number of individuals of species 2,
+
+α12 is the effect of an individual of species 2 on an individual of species 1
+
+Likewise, for the species 2, the equation is used as,
+
+
+<img src="images/3.png" title="" />
+
+&nbsp;
+
+Where, rm(2) is the maximum rate of growth per individual for species 2,
+
+N2 is the number of individuals of species 2,
+
+K2 is the carrying capacity of the species 2,
+
+N1 is the number of individuals of species 1,
+
+α21 is the effect of an individual of species 1 on an individual of species 2
+
  
+
+The above equations defined show the growth rate of the individuals for two different species (species 1 and species 2).
+
+ 
+
+If the competition between these species happens in the above mentioned manner, how were they able to coexist in the same geographical location? The ability to their coexistence depends on their developed adaptive features which are distinct to each other. C. clypeatus and D. pyramidus were good in locating their food source at the earliest so they get to the source earlier. On the other hand, B. obscurior recognizes its source rather slowly but once identified, it behaves aggressively towards its competitors and drives them off.
+
+ 
+
+As there is time delay for B. obscurior to recognize its source, C. clypeatus and D. pyramidus has an advantage to have the food sources before it reaches. While D. pyramidus does not recruit workers along with it, its chances to defend itself from the competitors are rather difficult. Likewise, these different species exist on the same geographical location and compete for the available food sources.
+
+
+<img src="images/4.png" title="" />
+
+&nbsp;
+
+(Adapted from Morrison, 2002)
+
+Figure 1. Statistical plots showing the varying dynamics with respect to time between the two species C. clypeatus and B. obscurior.
