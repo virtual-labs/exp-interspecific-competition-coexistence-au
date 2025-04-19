@@ -2,40 +2,40 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "1. ",
+      "question": "1. If interspecific competition does not lead to the coexistence and leads to existence of a species, which species has the maximum likely chance to survive described in theory section?",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Caenobita clypeatus (Herbst).",
+        "b": "Dorymyrmex pyramicus Roger.",
+        "c": "Brachymyrmex obscurior Forel",
+        "d": "None of the above."
       },
  
-      "correctAnswer": "a",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },   
 
 
     {
-      "question": "2. ",
+      "question": "2. When is competitive exclusion likely to occur?",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "When interspecific competition is less intense than intraspecific competition.",
+        "b": "When two species exhibit resource partitioning.",
+        "c": "When interspecific competition is more intense than intraspecific competition.",
+        "d": "When the inferior competitor has a refuge in the environment."
       },
-      
-      "correctAnswer": "b",
+     
+      "correctAnswer": "a",
       "difficulty": "beginner"
     },
 
     
     {
-      "question": "3. ",
+      "question": "3. In a given habitat, the maximum chance to win in an interspecific competition is more likely for ________.",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Aggressive, invasive and not a native origin.",
+        "b": "Native, and not so much aggressive or invasive.",
+        "c": "Both aggressive and invasive.",
+        "d": "None of the above."
       },
      
       "correctAnswer": "a",
