@@ -1,13 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Interspecific Competition & Coexistence — Simulation</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-		<!-- Your code goes here-->
+<div class="card" id="simbox"><div class="simbar"><span class="simbar-logo" aria-hidden="true"><img src="../assets/images/logo-amrita.svg" alt="Amrita Vishwa Vidyapeetham"></span><h1 class="simbar-title">Interspecific Competition &amp; Coexistence</h1><button class="fs-btn" id="fsBtn" onclick="toggleFS()" title="Toggle full screen" aria-label="Toggle full screen">⛶</button></div>
+      <div class="sim">
+        <div class="controls">
+          <div class="spgrid">
+            <div class="c1">
+              <h4>● Species 1</h4>
+              <div class="field"><label>Initial N₁ <span class="val" id="v_ip1">10</span></label><input type="range" id="ip1" min="1" max="150" value="10" oninput="sync()"></div>
+              <div class="field"><label>Growth r₁ <span class="val" id="v_r1">0.6</span></label><input type="range" id="r1" min="0.05" max="2" step="0.05" value="0.6" oninput="sync()"></div>
+              <div class="field"><label>Capacity K₁ <span class="val" id="v_k1">100</span></label><input type="range" id="k1" min="20" max="300" step="5" value="100" oninput="sync()"></div>
+              <div class="field"><label>Shape θ₁ <span class="val" id="v_t1">1</span></label><input type="range" id="t1" min="0.5" max="3" step="0.1" value="1" oninput="sync()"></div>
+              <div class="field"><label>Competition α₁ <span class="val" id="v_a1">0.6</span></label><input type="range" id="a1" min="0" max="1.6" step="0.05" value="0.6" oninput="sync()"></div>
+            </div>
+            <div class="c2">
+              <h4>● Species 2</h4>
+              <div class="field"><label>Initial N₂ <span class="val" id="v_ip2">10</span></label><input type="range" id="ip2" min="1" max="150" value="10" oninput="sync()"></div>
+              <div class="field"><label>Growth r₂ <span class="val" id="v_r2">0.6</span></label><input type="range" id="r2" min="0.05" max="2" step="0.05" value="0.6" oninput="sync()"></div>
+              <div class="field"><label>Capacity K₂ <span class="val" id="v_k2">80</span></label><input type="range" id="k2" min="20" max="300" step="5" value="80" oninput="sync()"></div>
+              <div class="field"><label>Shape θ₂ <span class="val" id="v_t2">1</span></label><input type="range" id="t2" min="0.5" max="3" step="0.1" value="1" oninput="sync()"></div>
+              <div class="field"><label>Competition α₂ <span class="val" id="v_a2">0.5</span></label><input type="range" id="a2" min="0" max="1.6" step="0.05" value="0.5" oninput="sync()"></div>
+            </div>
+          </div>
+          <div class="shared">
+            <div class="field"><label>Number of steps <span class="val" id="v_ns">300</span></label><input type="range" id="ns" min="50" max="800" step="10" value="300" oninput="sync()"></div>
+            <div class="field"><label>Step size (Δt) <span class="val" id="v_ss">0.1</span></label><input type="range" id="ss" min="0.02" max="0.4" step="0.02" value="0.1" oninput="sync()"></div>
+          </div>
+          <div class="btnrow">
+            <button class="btn btn-primary" onclick="run()">▶ Run</button>
+            <button class="btn btn-ghost" onclick="play()" id="playBtn">Play ▶</button>
+            <button class="btn btn-ghost" onclick="step()">Step ⏭</button>
+            <button class="btn btn-ghost" onclick="resetSim()">↺ Reset</button>
+          </div>
+          <div class="dl-label">Download</div>
+<div class="btnrow">
+            <button class="btn btn-accent" onclick="downloadPNG()">⤓ PNG</button>
+            <button class="btn btn-accent" onclick="downloadCSV()">⤓ CSV</button>
+          </div>
+        </div>
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+        <div class="plotwrap">
+          <div class="subtabs" id="subtabs">
+            <button class="subtab active" data-view="0">Time series</button>
+            <button class="subtab" data-view="1">Phase plane (N₂ vs N₁)</button>
+          </div>
+          <canvas class="field" id="field" width="720" height="300"></canvas>
+
+<div class="plot-title" id="plotTitle">Population densities over time</div>
+          <canvas class="chart" id="chart" width="720" height="420"></canvas>
+          <div class="legend" id="legend"></div>
+          
+          <div class="counts"><span class="c1">Species 1: <span id="c1">0</span></span><span class="c2">Species 2: <span id="c2">0</span></span><span>t = <span id="tnow">0</span></span></div>
+        </div>
+      </div>
+    </div>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
 </body>
 </html>
